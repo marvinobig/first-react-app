@@ -1,14 +1,16 @@
 import React from "react"
+import logo from "./media/logo.png"
+import './App.css'
 
 export default function Header() {
     return (
         <header>
             <nav>
-                <img src="../src/media/logo.png" alt="Marvel Logo" />
+                <img src={logo} alt="Marvel Logo" />
                 <ul className="nav-links">
-                    <li>More</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
