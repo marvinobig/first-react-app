@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+## First React App
+This is just practice using react's CDN links so that i can get to grips with using react locally without worring about the extra things like bundlers and dependencies and extra files.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Using ReactDOM 
+Global object with the render method for rendering html elements and text on a target within the HTML document.
 
-## Available Scripts
+## Quiz 1
+1. Why do we need to `import React from "react"` in our files?
+Because react is being used through a dependency and to access its objects we need to 
+import them first into the project that needs them meaning we can't use JSX without importing react
+first.
 
-In the project directory, you can run:
+2. If I were to console.log(page) in index.js, what would show up?
+An object containing each html element within the variable.
 
-### `npm start`
+3. What's wrong with this code:
+```
+const page = (
+    <h1>Hello</h1>
+    <p>This is my website!</p>
+)
+```
+It has no parent element so it would throw an error.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. What does it mean for something to be "declarative" instead of "imperative"?
+For something to be declarative, you only need to tell it to do something and it would know how.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For something to be imperative, you ned to tell it how to do something step by step before it is able to complete a task.
 
-### `npm test`
+5. What does it mean for something to be "composable"?
+When something is made from multiple components so it is modular.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Quiz 2 
+1. What is a React component?
+ A react component is an individual piece of code that codes for a part of a website or app e.g. a navigation bar. It is a function function that returns HTML code and it is reusable.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. What's wrong with this code?
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+The first letter of the name of the function is not capitalised.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. What's wrong with this code?
+```
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ReactDOM.render(Header(), document.getElementById("root"))
+```
+The component function is called like a function instead of being called like a HTML tag. 
