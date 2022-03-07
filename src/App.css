@@ -34,7 +34,7 @@ nav img {
 }
 
 .page {
-    height: 100vh;
+    height: calc(100vh - 200px);
     padding: 20px;
     background-color: navy;
     color: white;
