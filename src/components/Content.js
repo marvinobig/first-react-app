@@ -11,6 +11,11 @@ export default function Content() {
                 <li>The word "Zombies" was trademarked by Marvel Studios in 1973.</li>
                 <li>The events of Infinity War take place over 2 days.</li>
             </ul>
+
+            <p>The list above might not look like reasons but they do represent my love for the MCU in that 
+                they convey why the MCU just works. The fact that everything is connected and the little details in every scene 
+                that are just waiting to be discovered are the reasons why I love the MCU.
+            </p>
         </main>
     )
 }
