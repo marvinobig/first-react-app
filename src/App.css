@@ -1,7 +1,15 @@
+* {
+    box-sizing: border-box;
+    --text-color: #ffffff;
+    --nav-color: rgb(71, 57, 71);
+    --background-color: rgb(25, 25, 27);
+}
+
 body {
     margin: 0;
-    background-color: navy;
+    background-color: var(--background-color);
     font-family: 'Fredoka', sans-serif;
+    color: var(--text-color);
 }
 
 header {
@@ -14,8 +22,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    background-color: purple;
+    padding: 20px;
+    background-color: var(--nav-color);
 }
 
 .nav-links li {
@@ -25,7 +33,12 @@ nav {
 }
 
 .nav-links li a {
-    color: white;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
 }
 
 nav img {
@@ -37,8 +50,6 @@ nav img {
 .page {
     height: 100%;
     padding: 20px;
-    background-color: navy;
-    color: white;
 }
 
 .page h2 {
@@ -51,5 +62,4 @@ nav img {
 
 footer {
     padding: 20px;
-    color: white;
 }
