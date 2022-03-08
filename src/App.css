@@ -12,6 +12,10 @@ body {
     color: var(--text-color);
 }
 
+body, #root div {
+    height: 100vh;
+}
+
 .nav-container {
     position: sticky;
     top: 0;
@@ -48,7 +52,6 @@ body {
 }
 
 .content {
-    height: 100%;
     padding: 20px;
 }
 
