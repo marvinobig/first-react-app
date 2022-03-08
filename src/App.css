@@ -55,6 +55,10 @@ body, #root div {
 
 .content {
     padding: 20px;
+    background-image: url(./media/marvel-bg.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content h2 {
