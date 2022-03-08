@@ -5,11 +5,11 @@ export default function Content() {
         <main className="content">
             <h2>Reasons I love the MCU</h2>
             <ul>
-                <li>J.A.R.V.I.S stands for "Just a rather very intelligent system".</li>
-                <li>Tom Holland found out he got the role of spiderman through an instagram post.</li>
-                <li>Bucky Barnes trained black widow when she was still in the Red Room.</li>
-                <li>The word "Zombies" was trademarked by Marvel Studios in 1973.</li>
-                <li>The events of Infinity War take place over 2 days.</li>
+                <li><span>J.A.R.V.I.S stands for "Just a rather very intelligent system".</span></li>
+                <li><span>Tom Holland found out he got the role of spiderman through an instagram post.</span></li>
+                <li><span>Bucky Barnes trained black widow when she was still in the Red Room.</span></li>
+                <li><span>The word "Zombies" was trademarked by Marvel Studios in 1973.</span></li>
+                <li><span>The events of Infinity War take place over 2 days.</span></li>
             </ul>
 
             <p>The list above might not look like reasons but they do represent my love for the MCU in that 

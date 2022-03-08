@@ -3,6 +3,7 @@
     --text-color: #ffffff;
     --nav-color: rgb(83, 82, 83);
     --background-color: rgb(25, 25, 27);
+    --important-text: #d71414;
 }
 
 body {
@@ -60,7 +61,15 @@ body, #root div {
 }
 
 .content li {
-    padding-bottom: 10px;
+    padding-block: 10px;
+}
+
+.content li {
+    color: var(--important-text);
+}
+
+.content li span {
+    color: var(--text-color);
 }
 
 .page-end {
