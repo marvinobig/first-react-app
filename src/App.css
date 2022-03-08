@@ -3,13 +3,14 @@
     --text-color: #ffffff;
     --nav-color: rgb(83, 82, 83);
     --background-color: rgb(25, 25, 27);
-    --important-text: #d71414;
+    --important-text: #ff0000;
 }
 
 body {
     margin: 0;
     background-color: var(--background-color);
     font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
     color: var(--text-color);
 }
 
@@ -64,12 +65,9 @@ body, #root div {
     padding-block: 10px;
 }
 
-.content li {
+.content li::marker {
+    font-size: 1.4rem;
     color: var(--important-text);
-}
-
-.content li span {
-    color: var(--text-color);
 }
 
 .page-end {
