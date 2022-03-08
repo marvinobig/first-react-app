@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Content() {
     return (
-        <main className="page">
+        <main className="content">
             <h2>Reasons I love the MCU</h2>
             <ul>
                 <li>J.A.R.V.I.S stands for "Just a rather very intelligent system".</li>
