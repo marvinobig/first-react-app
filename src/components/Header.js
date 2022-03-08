@@ -7,9 +7,9 @@ export default function Header() {
             <nav>
                 <img src={logo} alt="Marvel Logo" />
                 <ul className="nav-links">
-                    <li><a href="#">More</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Characters</a></li>
                 </ul>
             </nav>
         </header>
